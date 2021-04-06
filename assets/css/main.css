@@ -3,11 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-/*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -74,10 +70,51 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+/* Nav Bar */
+
+	/* Style the navbar */
+	#navbar {
+		overflow: hidden;
+		background-color:rgba(32, 32, 32, 0.877);
+		z-index: 2;
+	}
+
+	/* Navbar links */
+	#navbar a {
+		float: right;
+		display: block;
+		color:  #49bf9d;
+		text-align: center;
+		padding: 20px;
+		padding-right: 2.8em;
+		padding-left: 2.8em;
+		text-decoration: none;
+		position: relative;
+	}
+
+	/* Page content */
+	.content {
+		padding: 16px;
+	}
+
+	/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+	.sticky + .content {
+		padding-top: 60px;
+	}
+
 /* Basic */
 
 	html {
 		box-sizing: border-box;
+		
 	}
 
 	*, *:before, *:after {
@@ -86,6 +123,7 @@ input, select, textarea {
 
 	body {
 		background: rgba(0, 0, 0, 0.877);
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -242,6 +280,9 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+
+
+
 
 /* Container */
 

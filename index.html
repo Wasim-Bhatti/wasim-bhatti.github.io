@@ -11,8 +11,41 @@
 
 <body class="is-preload">
 
+
+	<!-- Nav Bar -->
+
+	<div id="navbar">
+		<a href="#contact">Music</a>
+		<a href="#writing">Books</a>
+		<a href="#projects">Guides</a>
+		<a href="#guides" style="padding-right: 3.5em; padding-left: 3.5em;">Projects</a>
+		<a href="#books" style="padding-right: 3.5em; padding-left: 3.5em;">Writing</a>
+		<a href="#music" style="padding-right: 3.5em;padding-left: 3.32em;">Contact Me</a>
+	</div>
+
+	<script>
+
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function () { myFunction() };
+
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+
 	<!-- Header -->
-	<header id="header">
+	<header id="header" style="z-index: 5;">
 		<div class="inner">
 			<a href="#" class="image avatar"><img src="images/avatar.png" alt="" /></a>
 			<h1 style="font-family: Roboto;">My name is <strong>Wasim Bhatti</strong>. <br> This website is a
@@ -40,6 +73,10 @@
 		</div>
 	</header>
 
+
+
+
+
 	<!-- Main -->
 	<div id="main">
 
@@ -48,7 +85,7 @@
 			<header class="major">
 				<h2 style="font-family: Montserrat; margin: 0 0 0.6em 0;">Philosophy, Physics, Cosmology, Computer
 					Science... </h2>
-				<h2 style="font-family: Roboto; color:#49bf9d" ;>Curiosity does not have limits.</h2>
+				<h2 style="font-family: Roboto; color:#49bf9d" ;>Curiosity has no limits.</h2>
 			</header>
 
 			<blockquote>"You must have chaos within you to give birth to a dancing star." -Nietzsche</blockquote>
@@ -58,10 +95,10 @@
 				anything.
 				<br><br>
 				I love reading about Philosophy, Psychology, Programming, Design, Marketing... to name a few.
-				Presently, I am working towards a BSc in Computer Science. I have been programming since the
+				Presently, I am working towards a BSc in Computer Science and Physics. I have been programming since the
 				age
 				of 16 - and love the freedom to build anything I want. I also have a passion for writing, and recently
-				began a newsletter to practice writing and sharing important ideas.
+				began a newsletter to practice writing and sharing ideas.
 				<br><br>
 				Exposure to new and uncomfortable experiences is the key to growth. One may study everything,
 				but they will not truly learn until they experience. My long-term goal is to work at as many startups
