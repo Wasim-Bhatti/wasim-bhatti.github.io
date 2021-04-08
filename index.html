@@ -12,38 +12,6 @@
 <body class="is-preload">
 
 
-	<!-- Nav Bar -->
-
-	<div id="navbar">
-		<a href="#contact" style="padding-right:3.45em; padding-left: 3.45em;">Music</a>
-		<a href="#writing" style="padding-right: 3.45em; padding-left: 3.45em;">Books</a>
-		<a href="#projects" style="padding-right: 3.45em; padding-left: 3.45em;">Guides</a>
-		<a href="#guides" style="padding-right: 2.8em; padding-left: 2.8em;">Projects</a>
-		<a href="#books" style="padding-right: 2.8em; padding-left: 2.8em;">Writing</a>
-		<a href="#music" style="padding-right: 2.8em;padding-left: 2.8em;">Contact Me</a>
-	</div>
-
-	<script>
-
-		// When the user scrolls the page, execute myFunction
-		window.onscroll = function () { myFunction() };
-
-		// Get the navbar
-		var navbar = document.getElementById("navbar");
-
-		// Get the offset position of the navbar
-		var sticky = navbar.offsetTop;
-
-		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-		function myFunction() {
-			if (window.pageYOffset >= sticky) {
-				navbar.classList.add("sticky")
-			} else {
-				navbar.classList.remove("sticky");
-			}
-		}
-	</script>
-
 	<!-- Header -->
 	<header id="header" style="z-index: 5;">
 		<div class="inner">
@@ -67,7 +35,7 @@
 							class="label">Github</span></a></li>
 				<li><a href="https://www.linkedin.com/in/bhattiwasim/" class="icon brands fa-linkedin"><span
 							class="label">LinkedIn</span></a></li>
-				<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="#contact" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 
 		</div>
@@ -75,13 +43,53 @@
 
 
 
-
-
 	<!-- Main -->
 	<div id="main">
 
-		<!-- One -->
+
 		<section id="one">
+
+			<!-- Side Nav Bar -->
+
+			<div>
+
+				<!-- Sticky Open Button -->
+				<span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+
+			</div>
+
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+				<a href="#" class="button large">Work</a>
+				<br>
+				<a href="#" class="button large">Guides</a>
+				<br>
+				<a href="#" class="button large">Books</a>
+				<br>
+				<a href="#" class="button large">Writing</a>
+				<br>
+				<a href="#" class="button large">Projects</a>
+				<br>
+				<a href="#contact" class="primary button large">Contact Me</a>
+
+			</div>
+
+
+			<script>
+				function openNav() {
+					document.getElementById("mySidenav").style.width = "350px";
+					document.getElementById("main").style.marginRight = "350px";
+					document.body.style.backgroundColor = rgba(0, 0, 0, 0.5);
+				}
+
+				function closeNav() {
+					document.getElementById("mySidenav").style.width = "0";
+					document.getElementById("main").style.marginRight = "0";
+					document.body.style.backgroundColor = rgba(0, 0, 0, 0.877);
+				}
+			</script>
+
+
 			<header class="major">
 				<h2 style="font-family: Montserrat; margin: 0 0 0.6em 0;">Philosophy, Physics, Cosmology, Computer
 					Science... </h2>
@@ -112,7 +120,7 @@
 				<li><a href="#" class="button fit">Books</a></li>
 				<li><a href="#" class="button fit">Writing</a></li>
 				<li><a href="#" class="button fit">Projects</a></li>
-				<li><a href="#" class="primary button fit">Contact Me</a></li>
+				<li><a href="#contact" class="primary button fit">Contact Me</a></li>
 			</ul>
 		</section>
 
@@ -157,20 +165,20 @@
 		</section>
 
 		<!-- Three -->
-		<section id="three">
+		<section id="contact">
 			<h2>Reach out!</h2>
 			<p>Think I could be useful for your business? Reach out! I love exploring new opportunities, and would love
 				to have a chat. Book a calendly time, or send me a mail:
 			</p>
 			<div class="row">
 				<div class="col-8 col-12-small">
-					<form method="post" action="#">
+					<form method="post" action="mailto:hello@wasimbhati.com">
 						<div class="row gtr-uniform gtr-50">
 							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
 									placeholder="Name" /></div>
 							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email"
 									placeholder="Email" /></div>
-							<div class="col-12"><textarea name="message" id="message" placeholder="Message"
+							<div class="col-12"><textarea name="Write away..." id="message" placeholder="Message"
 									rows="4"></textarea></div>
 						</div>
 					</form>
@@ -192,15 +200,17 @@
 						<br>
 						<li>
 							<h3 class="icon solid fa-calendar"><span class="label">Email</span></h3>
-							<a href="#">Calendly</a>
+							<a href=https://calendly.com/wasimbhatti/15min>Calendly - Book a meeting</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</section>
 
-		<!-- Four -->
 
+
+		<!-- Four -->
+		<!-- 
 		<section id="four">
 			<h2>Elements</h2>
 
@@ -558,24 +568,24 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</section>
 
 		</section>
-		-->
 
-	</div>
+	</div> -->
 
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
 
-		</div>
-	</footer>
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 </body>
 
