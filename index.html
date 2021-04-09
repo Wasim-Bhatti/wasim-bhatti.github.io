@@ -149,11 +149,6 @@
 					<form name="wasimcontact" netlify-honeypot="bot-field" method="post" data-netlify="true">
 						<div class="row gtr-uniform gtr-50">
 
-							<div class="col-6 col-12-xsmall">
-								<p class="hidden">
-									<label>Do NOT fill this out if you’re human: <input name="bot-field" /></label>
-								</p>
-							</div>
 
 							<div class="col-6 col-12-xsmall">
 								<input type="text" name="custname" id="name" placeholder="Name" />
@@ -172,6 +167,10 @@
 						<ul class="actions">
 							<li><input name="custsubmit" type="submit" value="Send Message" /></li>
 						</ul>
+
+						<p class="hidden">
+							<label>Do NOT fill this out if you’re human: <input name="bot-field" /></label>
+						</p>
 					</form>
 
 				</div>
