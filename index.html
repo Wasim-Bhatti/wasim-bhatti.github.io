@@ -146,17 +146,26 @@
 			</p>
 			<div class="row">
 				<div class="col-8 col-12-small">
-					<form name="wasimcontact" content-type="POST" method="post" data-netlify="true">
+					<form name="wasimcontact" netlify-honeypot="bot-field" method="post" data-netlify="true">
 						<div class="row gtr-uniform gtr-50">
 
-							<div class="col-6 col-12-xsmall"><input type="text" name="custname" id="name"
-									placeholder="Name" /></div>
+							<div class="col-6 col-12-xsmall">
+								<p class="hidden">
+									<label>Do NOT fill this out if you’re human: <input name="bot-field" /></label>
+								</p>
+							</div>
 
-							<div class="col-6 col-12-xsmall"><input type="email" name="custemail" id="email"
-									placeholder="Email" /></div>
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="custname" id="name" placeholder="Name" />
+							</div>
 
-							<div class="col-12"><textarea name="custmessage" id="message" placeholder="Message"
-									rows="4"></textarea></div>
+							<div class="col-6 col-12-xsmall">
+								<input type="email" name="custemail" id="email" placeholder="Email" />
+							</div>
+
+							<div class="col-12">
+								<textarea name="custmessage" id="message" placeholder="Message" rows="4"></textarea>
+							</div>
 						</div>
 						<br>
 
